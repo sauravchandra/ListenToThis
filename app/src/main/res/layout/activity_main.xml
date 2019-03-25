@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/activity_main_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:text="Listen to this!"/>
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_view"
+        android:layout_below="@+id/activity_main_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/rate_song"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/youtube_view"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="Rate this song"/>
+
+    <com.hsalf.smilerating.SmileRating
+        android:id="@+id/smile_rating"
+        android:layout_below="@+id/rate_song"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:placeHolderBackgroundColor="#a8a9ad"
+        app:textSelectionColor="#ffffff"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/footer_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColorLink="@color/white"
+            android:linksClickable="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/footer_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColorLink="@color/white"
+            android:linksClickable="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

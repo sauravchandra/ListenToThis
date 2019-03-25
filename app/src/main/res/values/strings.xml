@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Listen To This</string>
+    <string name="setup_text_1">Hey there!</string>
+    <string name="setup_text_2">Do you mind telling me your name?</string>
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="footer_text_2"><a href="http://sauravchandra.com">Saurav Chandra</a></string>
+</resources>
